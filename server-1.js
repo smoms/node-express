@@ -15,6 +15,10 @@ app.use(function (req, res, next) {
 
 var server = http.createServer(app);
 
-server.listen(port, hostname, function(){
-  console.log('Server running at http:'+hostname+':'+port+'/');
+// server.listen(port, hostname, function(){
+//   console.log('Server running at http:'+hostname+':'+port+'/');
+// });
+
+app.listen(port, hostname, function(){
+   console.log('Server running at http:'+hostname+':'+port+'/');
 });
